@@ -7,12 +7,15 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container-fluid bg-navy py-5 px-2 d-flex align-items-center overflow-hidden">
+    <div class="container-fluid height bg-navy py-5 px-2 d-flex align-items-center overflow-hidden">
         <div class="row d-flex justify-content-center">
-            <div class="col d-flex justify-content-center">
+            <div id="logo-container" class="col d-md-flex justify-content-center">
                 <img id="umami-logo" class="mt-4" src="images/umami-logo.png" alt="Umami Logo">
             </div>
             <div class="col d-flex flex-column align-items-center">
@@ -22,14 +25,56 @@
                 <span class="text-white mb-3">Sugar Land, TX 77479</span>
                 <a class="p-1 px-2 text-decoration-none text-navy bg-white rounded h5" href="https://umamijapanesecuisine.kwickmenu.com/" target="_blank" rel="noopener noreferrer">Menu</a>
             </div>
-            <div class="col d-flex justify-content-center">
+            <div id="header-img-container" class="col d-md-flex justify-content-center">
                 <img class="rounded mt-4" id="sushi-img1" src="images/sushi2.jpeg" alt="Sushi">
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-blue"></div>
-    <!-- <div class="container-fluid bg-navy"></div> -->
-    <!-- parallax scrolling? -->
-    <div class="container-fluid bg-blue"></div>
+    <div id="mission-container" class="container-fluid height bg-blue d-flex align-items-center justify-content-evenly">
+        <div>
+            <img id="sushi-chef" class="rounded shadow" src="images/sushi-chef.jpeg" alt="Sushi Chef">
+        </div>
+        <div class="d-flex flex-column align-items-center">
+            <p id="mission-title" class="text-white display-3">Our Philosophy</p>
+            <p id="mission-statement" class="text-white display-5">Quality. Hospitality. Innovation.</p>
+        </div>
+    </div>
+    <div class="paralax"></div>
+    <div id="card-container" class="container-fluid bg-navy d-flex justify-content-evenly align-items-center py-5">
+        <div class="card" style="width: 18rem;">
+            <img src="images/sushi-cali.jpeg" class="card-img-top" alt="california sushi roll">
+            <div class="card-body">
+              <h5 class="card-title text-center">Shaggy Dog</h5>
+              <p class="card-text">Shrimp tempura, crab, cream cheese, avocado w/ eel sauce & spicy mayo</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/sushi1.jpeg" class="card-img-top" alt="suhsi roll" style="max-height: 286px;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Kiss of Fire</h5>
+              <p class="card-text">Shrimp tempura, soft shell crab mix, cucumber, albacore, serrano w/ spicy garlic ponzu & chili sauce</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/sushi-salmon.jpeg" class="card-img-top" alt="maki sushi roll" style="height: 286px;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Riverstone</h5>
+              <p class="card-text">Crab, avocado, cream cheese, cooked shrimp,, deep fried w/ yum yum & eel sauce</p>
+            </div>
+        </div>
+    </div>
+    <div id="map-container" class="container-fluid bg-blue d-flex align-items-center justify-content-center p-5">
+        <div>
+            <iframe class="shadow rounded mr-md-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3470.8547646171687!2d-95.58456548480976!3d29.549723582065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640e5b27f6c7d13%3A0x2c280f2db7c0ddcd!2sUmami!5e0!3m2!1sen!2sus!4v1645903368692!5m2!1sen!2sus" width="100%" height="300px" style="border:#274c77 solid 3px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <figure class="text-end">
+            <blockquote class="blockquote">
+                <p class="lead text-white ml-lg-5">Located in Sugar Land, this up-scale sushi restaurant is worth the drive from Houston. Period.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer text-navy" style="text-align: end;">
+              JAYDEN PUCK <cite title="Source Title">Houston Chronicle</cite>
+            </figcaption>
+        </figure>
+    </div>
 </body>
 </html>
