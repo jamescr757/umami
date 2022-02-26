@@ -1,0 +1,53 @@
+/* 
+    navy: #274c77
+    white: #e7ecef
+    gray: #8b8c89
+    blue: #6096ba
+    light-blue: #a3cef1
+*/
+
+.bg-navy {
+    background-color: #274c77;
+}
+
+.bg-white {
+    background-color: #e7ecef
+}
+
+.bg-blue {
+    background-color: #6096ba;
+}
+
+.text-white {
+    color: #e7ecef;
+}
+
+.text-navy {
+    color: #274c77;
+}
+
+.container-fluid {
+    height: 50vh;
+    box-sizing: border-box;
+}
+
+a {
+    border: #274c77 solid 2px;
+}
+
+a:hover {
+    background-color: #274c77 !important;
+    color: #e7ecef;
+    border: #e7ecef solid 2px !important;
+}
+
+#umami-logo, #sushi-img1 {
+    height: 80%;
+}
+
+@media only screen and (max-width: 1322px) {
+
+    #restaurant-type {
+        display: none;
+    }
+}
